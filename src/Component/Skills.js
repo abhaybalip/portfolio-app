@@ -4,14 +4,7 @@ import '../Asset/css-file/Skills.css'
 export function Skills() {
     return (
         <div id='skill-body'>
-            <h3 style={{
-                margin: '1rem 0 0 0',
-                backgroundColor: '#414141',
-                border: '1px solid #e0e0e0',
-                color: '#FFFFFF',
-                padding: '01rem',
-                borderRadius: '1rem'
-            }}>
+            <h3>
                 My-Skill sets
             </h3>
 

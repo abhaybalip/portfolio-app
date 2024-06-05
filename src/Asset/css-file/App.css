@@ -24,6 +24,13 @@
     align-items: center;
 
     display: inline-block;
+
+    transition: all 0.25s;
+}
+
+#app-header>h3:hover{
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.8);
+    transform: scale(1.25);
 }
 
 #nav-bar {
@@ -52,6 +59,12 @@
     align-items: center;
     justify-content: center;
 
+    transition: all 0.25s;
+}
+
+#nav-bar>a:hover{
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.8);
+    transform: scale(1.25);
 }
 
 #app-body {

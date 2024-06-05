@@ -23,7 +23,7 @@ export default class App extends React.Component {
           <a href="#edu-body">Education</a>
           <a href="#exp-body">Experiece</a>
           <a href="#skill-body">Skills</a>
-          <a href="#">-Resume</a>
+          <a href="#">//Resume</a>
 
         </nav>
       </div>
