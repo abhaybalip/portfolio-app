@@ -1,21 +1,23 @@
 #app-header {
+    width: auto;
     border: 1px solid black;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
 
     user-select: none;
-    overflow: scroll;
-
 
     background-color: #212121;
     border: 1px solid #e0e0e0;
     color: #FFFFFF;
+
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 #app-header>h3 {
     padding: 1rem;
-background-color: #414141;
+    background-color: #414141;
     border: 1px solid #e0e0e0;
     border-radius: 1rem;
 
@@ -30,8 +32,6 @@ background-color: #414141;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
-    /* border: 1px solid red; */
 
     background-color: #212121;
     color: #FFFFFF;
@@ -54,22 +54,17 @@ background-color: #414141;
 
 }
 
-
-
-
 #app-body {
     user-select: none;
 
     color: #FFFFFF;
     background-color: #212121;
     border: 1px solid #e0e0e0;
-
-    overflow: hidden;
-
 }
 
 #app-footer {
-    font-size:small;
+    width: auto;
+    font-size: small;
     color: #FFFFFF;
     background-color: #212121;
     border: 1px solid #e0e0e0;
@@ -79,6 +74,4 @@ background-color: #414141;
     align-items: center;
 
     user-select: none;
-    overflow: hidden;
-
 }

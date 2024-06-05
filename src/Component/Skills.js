@@ -4,7 +4,14 @@ import '../Asset/css-file/Skills.css'
 export function Skills() {
     return (
         <div id='skill-body'>
-            <h3 style={{ margin: '1rem 0 0 0' }}>
+            <h3 style={{
+                margin: '1rem 0 0 0',
+                backgroundColor: '#414141',
+                border: '1px solid #e0e0e0',
+                color: '#FFFFFF',
+                padding: '01rem',
+                borderRadius: '1rem'
+            }}>
                 My-Skill sets
             </h3>
 
@@ -29,7 +36,7 @@ export function Skills() {
                     margin: '0rem 0rem 0rem 5rem',
                     padding: '0.5rem',
                 }}>
-                    <li>Skill 1</li>
+                    <li>Skill 2</li>
 
                 </ul>
             </div>

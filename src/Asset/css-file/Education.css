@@ -1,4 +1,4 @@
-#edu-body{
+#edu-body {
     border: 1px solid #e0e0e0;
 
     display: flex;
@@ -7,10 +7,10 @@
     align-items: center;
 }
 
-p{
+p {
     margin: 0px;
 }
 
-li{
+li {
     padding: 0.7rem;
 }

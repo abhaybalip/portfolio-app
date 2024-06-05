@@ -13,22 +13,42 @@ export default class App extends React.Component {
     super()
   }
 
+  Header() {
+    return (
+      <div id='app-header'>
+        <h3>Welcome to My Portfolio ❤️</h3>
+
+        <nav id="nav-bar">
+          <a href="#about-body">About</a>
+          <a href="#edu-body">Education</a>
+          <a href="#exp-body">Experiece</a>
+          <a href="#skill-body">Skills</a>
+          <a href="#">-Resume</a>
+
+        </nav>
+      </div>
+    )
+  }
+
+  Footer() {
+    return (
+      <div id='app-footer'>
+        <pre>
+          Developed @AbhayBalip ❤️ Copyright &copy; - {new Date().getFullYear()}
+        </pre>
+      </div>
+    )
+  }
+
   render() {
     return (
-      <>
-        <div id='app-header'>
-          <h3>Welcome to My Portfolio ❤️</h3>
-
-            <nav id="nav-bar">
-              <a href="#about-body">About</a>
-              <a href="#edu-body">Education</a>
-              <a href="#exp-body">Experiece</a>
-              <a href="#skill-body">Skills</a>
-
-            </nav>
-        </div>
+      <div style={{
+        width: 'auto',
+      }}>
 
         <div id="app-body">
+
+          {this.Header()}
 
           {About()}
 
@@ -38,15 +58,11 @@ export default class App extends React.Component {
 
           {Skills()}
 
+          {this.Footer()}
+
         </div>
 
-
-        <div id='app-footer'>
-          <pre>
-            Developed @AbhayBalip ❤️ Copyright &copy; - {new Date().getFullYear()}
-          </pre>
-        </div>
-      </>
+      </div>
     )
   }
 }
