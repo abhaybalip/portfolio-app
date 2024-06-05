@@ -24,7 +24,7 @@
 
     transition: all 0.5s;
 
-    background-image: url('../img-file/UserPhoto.jpg');
+    background-image: url('../img-file/UserImg.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

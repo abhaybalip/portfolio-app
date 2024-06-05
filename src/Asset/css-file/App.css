@@ -1,3 +1,19 @@
+#app {
+    width: auto;
+    opacity: 0;
+    animation: fadeIn 0.75s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 #app-header {
     width: auto;
     border: 1px solid black;
@@ -28,7 +44,7 @@
     transition: all 0.25s;
 }
 
-#app-header>h3:hover{
+#app-header>h3:hover {
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.8);
     transform: scale(1.25);
 }
@@ -62,7 +78,7 @@
     transition: all 0.25s;
 }
 
-#nav-bar>a:hover{
+#nav-bar>a:hover {
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.8);
     transform: scale(1.25);
 }

@@ -42,9 +42,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div style={{
-        width: 'auto',
-      }}>
+      <div id="app">
 
         <div id="app-body">
 
