@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './Asset/css-file/App.css'
+
+import { About } from "./Component/About"
+import { Education } from "./Component/Education"
+import { Experience } from "./Component/Experiece"
+import { Skills } from "./Component/Skills"
+
+
+export default class App extends React.Component {
+  constructor() {
+    super()
+  }
+
+  render() {
+    return (
+      <>
+        <div id='app-header'>
+          <h3>Welcome to My Portfolio ❤️</h3>
+
+            <nav id="nav-bar">
+              <a href="#about-body">About</a>
+              <a href="#edu-body">Education</a>
+              <a href="#exp-body">Experiece</a>
+              <a href="#skill-body">Skills</a>
+
+            </nav>
+        </div>
+
+        <div id="app-body">
+
+          {About()}
+
+          {Education()}
+
+          {Experience()}
+
+          {Skills()}
+
+        </div>
+
+
+        <div id='app-footer'>
+          <pre>
+            Developed @AbhayBalip ❤️ Copyright &copy; - {new Date().getFullYear()}
+          </pre>
+        </div>
+      </>
+    )
+  }
 }
-
-export default App;
