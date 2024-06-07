@@ -59,7 +59,7 @@ export function About() {
                     border: '1px solid #e0e0e0',
                     borderRadius: '1rem',
 
-                    padding: '1rem'
+                    padding: '1rem 0 1rem 0'
                 }}>
                     <div id='about-img' src={UserImgPath} alt="user-image"></div>
                     <div>
