@@ -1,38 +1,60 @@
 
 import '../Asset/css-file/Skills.css'
 
+const SkillIcon = require('../Asset/img-file/Head-Icon/Skill-Icon.jpg')
+
+const ProgrammingIcon = require('../Asset/img-file/Skill-Image/Programming-Icon.jpg')
+const DBIcon = require('../Asset/img-file/Skill-Image/DB-Icon.jpg')
+
+
 export function Skills() {
     return (
         <div id='skill-body'>
-            <h3>
-                My-Skill sets
-            </h3>
 
-            <div style={{
+            <h3 style={{
                 display: 'flex',
                 flexDirection: 'row',
+                justifyContent: 'space-evenly',
                 alignItems: 'center',
-                justifyContent: "space-evenly",
 
-                fontSize: 'large'
+                padding: '1rem'
             }}>
-                <ul style={{
-                    margin: '0rem 5rem 0rem 0rem',
-                    padding: '0.5rem',
-                }}>
+                <img src={SkillIcon} alt='Skill-Icon' style={{
+                    height: '2.5rem',
+                    width: '2.5rem',
+                    borderRadius: '1rem',
+                    marginRight: '0.5rem'
+                }}></img>
+                <p>
+                    My-Skill sets
+                </p>
+            </h3>
+            <p style={{
 
-                    <li>Skill 1</li>
+            }}>
+                <div id='skill-line'>
+                    <img id='skill-icon' src={ProgrammingIcon} alt='Programming-Icon'></img>
+                    <div id='skill-name'>
+                        Programming Language
+                    </div>
+                    :
+                    <div id='skill-list'>
+                        C/Cpp , Java , JavaScript , Python ,  Dart //
+                    </div>
+                </div>
 
-                </ul>
 
-                <ul style={{
-                    margin: '0rem 0rem 0rem 5rem',
-                    padding: '0.5rem',
-                }}>
-                    <li>Skill 2</li>
-
-                </ul>
-            </div>
+                <div>
+                    <img id='skill-icon' src={DBIcon} alt='Programming-Icon'></img>
+                    <div id='skill-name'>
+                        Programming Language
+                    </div>
+                    :
+                    <div id='skill-list'>
+                        SQL , NoSql //
+                    </div>
+                </div>
+            </p>
         </div>
     )
 }

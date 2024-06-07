@@ -36,6 +36,7 @@
     background-color: #414141;
     border: 1px solid #e0e0e0;
     border-radius: 1rem;
+    margin: 0.5rem;
 
     align-items: center;
 
@@ -57,19 +58,27 @@
     align-items: center;
 
     background-color: #212121;
+    border-radius: 1rem;
+
+    background-color: #414141;
+    border: 1px solid #e0e0e0;
     color: #FFFFFF;
+
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0.5rem;
 }
 
 #nav-bar>a {
+    font-size: larger;
     height: 2.5rem;
     width: 5rem;
-    padding: 0.2rem;
+    padding: 0.1rem;
     margin: 0rem 1rem 0rem 1rem;
 
     color: #e0e0e0;
-    background-color: #414141;
-    border-radius: 1rem;
-    border: 1px solid #e0e0e0;
+    /* background-color: #414141; */
+    /* border-radius: 1rem; */
+    /* border: 1px solid #e0e0e0; */
 
     display: flex;
     align-items: center;

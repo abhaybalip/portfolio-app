@@ -1,3 +1,4 @@
+
 import React from "react"
 
 import './Asset/css-file/App.css'
@@ -11,6 +12,8 @@ import { Skills } from "./Component/Skills"
 export default class App extends React.Component {
   constructor() {
     super()
+    this.ResumeLink = "https://www.canva.com/design/DAF8rYWEmpk/mlX_uC0bcAokznb3i0JY_w/edit?utm_content=DAF8rYWEmpk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+    this.currYear = new Date().getFullYear()
   }
 
   Header() {
@@ -20,10 +23,10 @@ export default class App extends React.Component {
 
         <nav id="nav-bar">
           <a href="#about-body">About</a>
+          <a href="#skill-body">Skills</a>
           <a href="#edu-body">Education</a>
           <a href="#exp-body">Experiece</a>
-          <a href="#skill-body">Skills</a>
-          <a href="#">//Resume</a>
+          <a href={this.ResumeLink}>@Resume</a>
 
         </nav>
       </div>
@@ -34,7 +37,7 @@ export default class App extends React.Component {
     return (
       <div id='app-footer'>
         <pre>
-          Developed @AbhayBalip ❤️ Copyright &copy; - {new Date().getFullYear()}
+          Developed @AbhayBalip ❤️ Copyright &copy; - {this.currYear}
         </pre>
       </div>
     )
@@ -52,9 +55,9 @@ export default class App extends React.Component {
 
           {Education()}
 
-          {Experience()}
-
           {Skills()}
+
+          {Experience()}
 
           {this.Footer()}
 

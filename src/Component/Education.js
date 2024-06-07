@@ -1,13 +1,30 @@
 
 import '../Asset/css-file/Education.css'
 
+const EduIcon = require('../Asset/img-file/Head-Icon/Edu-Icon.jpg')
+
 export function Education() {
     return (
         <div id='edu-body'>
-            <h3>
-                My-Education Details
+            <h3 style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'space-evenly',
+                    alignItems: 'center',
+                    
+                    padding: '1rem'
+                }}>
+                <img src={EduIcon} alt='Edu-icon' style={{
+                    height: '2.5rem',
+                    width: '2.5rem',
+                    borderRadius: '1rem',
+                    marginRight: '0.5rem'
+                }}></img>
+                <p>
+                    My-Education Details
+                </p>
             </h3>
-            <p>
+            <pre>
                 <ul>
                     <li>B.E. CSE
                         @MumbaiUniversity - BVCOENM
@@ -24,7 +41,7 @@ export function Education() {
                         KVM.D Mumbai
                     </li>
                 </ul>
-            </p>
+            </pre>
         </div>
     )
 }
