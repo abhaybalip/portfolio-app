@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-#exp-body>h3{
+#exp-body>h3 {
     margin: 1rem 0rem 0rem 0rem;
     background-color: #414141;
     border: 1px solid #e0e0e0;
@@ -18,7 +18,7 @@
     transition: all 0.25s;
 }
 
-#exp-body>h3:hover{
+#exp-body>h3:hover {
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.8);
     transform: scale(1.25);
 }

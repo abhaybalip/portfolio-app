@@ -28,7 +28,9 @@ export function About() {
                 margin: '1rem 0 0 0',
                 padding: '1rem',
                 border: '1px solid #FFFFFF',
-                borderRadius: '1rem'
+                borderRadius: '1rem',
+
+
             }}>
                 <img src={AboutIcon} alt='about-icon' style={{
                     height: '2.5rem',
@@ -79,7 +81,7 @@ export function About() {
                     color: '#313131',
                     backgroundColor: '#414141',
                     border: '1px solid #e0e0e0',
-                    
+
                     borderRadius: '1rem',
                 }}>
                     <a href={EmailLink} target="_blank">

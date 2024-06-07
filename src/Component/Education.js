@@ -7,13 +7,13 @@ export function Education() {
     return (
         <div id='edu-body'>
             <h3 style={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'space-evenly',
-                    alignItems: 'center',
-                    
-                    padding: '1rem'
-                }}>
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-evenly',
+                alignItems: 'center',
+
+                padding: '1rem'
+            }}>
                 <img src={EduIcon} alt='Edu-icon' style={{
                     height: '2.5rem',
                     width: '2.5rem',

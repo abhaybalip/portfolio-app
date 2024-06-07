@@ -7,13 +7,13 @@ export function Experience() {
     return (
         <div id="exp-body">
             <h3 style={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'space-evenly',
-                    alignItems: 'center',
-                    
-                    padding: '1rem'
-                }}>
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-evenly',
+                alignItems: 'center',
+
+                padding: '1rem'
+            }}>
                 <img src={ExpIcon} alt='Exp-Iocn' style={{
                     height: '2.5rem',
                     width: '2.5rem',
@@ -21,7 +21,7 @@ export function Experience() {
                     marginRight: '0.5rem'
                 }}></img>
                 <p>
-                My-Experience Information
+                    My-Experience Information
                 </p>
             </h3>
 

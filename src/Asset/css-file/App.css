@@ -1,7 +1,9 @@
 #app {
-    width: auto;
+    width: 100%;
     opacity: 0;
     animation: fadeIn 0.75s ease-in-out forwards;
+
+    border: 1px solid #FFFFFF;
 }
 
 @keyframes fadeIn {
@@ -15,7 +17,7 @@
 }
 
 #app-header {
-    width: auto;
+    width: 100%;
     border: 1px solid black;
     align-items: center;
     display: flex;
@@ -93,6 +95,7 @@
 }
 
 #app-body {
+    width: 100%;
     user-select: none;
 
     color: #FFFFFF;
@@ -101,7 +104,7 @@
 }
 
 #app-footer {
-    width: auto;
+    width: 100%;
     font-size: small;
     color: #FFFFFF;
     background-color: #212121;
