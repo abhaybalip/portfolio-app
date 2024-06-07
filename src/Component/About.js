@@ -1,12 +1,18 @@
 
 import '../Asset/css-file/About.css'
 
+const AboutIcon = require('../Asset/img-file/Head-Icon/About-Icon.jpg')
+
 const UserImgPath = require('../Asset/img-file/UserPhoto.jpg'),
     EmailImg = require('../Asset/img-file/Email-img.jpg'),
     LikedinImg = require('../Asset/img-file/Linkedin-img.jpg'),
     GithubImg = require('../Asset/img-file/Github-img.jpg'),
     HackerRankImg = require('../Asset/img-file/HackerRank-img.jpg')
 
+const EmailLink = 'mailto:abhay.balip01@gmail.com/',
+    LinkedinLink = 'https://www.linkedin.com/abhaybalip/',
+    GitHubLink = 'https://www.github.com/abhaybalip/',
+    HackerRankLink = 'https://www.hackerrank.com/abhaybalip/'
 
 export function About() {
     return (
@@ -15,7 +21,7 @@ export function About() {
             <div id='user-info' style={{
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'center',
+                justifyContent: 'space-evenly',
                 alignItems: 'center',
 
                 backgroundColor: '#414141',
@@ -43,23 +49,24 @@ export function About() {
                 border: '1px solid #e0e0e0',
                 borderRadius: '1rem',
             }}>
-                <a href='mailto:abhay.balip01@gmail.com' target="_blank">
+                <a href={EmailLink} target="_blank">
                     <img id='link-img' src={EmailImg}></img>
                 </a>
 
-                <a href='https://www.linkedin.com/abhaybalip' target="_blank">
+                <a href={LinkedinLink} target="_blank">
                     <img id='link-img' src={LikedinImg}></img>
                 </a>
 
-                <a href='https://www.github.com/abhaybalip' target="_blank">
+                <a href={GitHubLink} target="_blank">
                     <img id='link-img' src={GithubImg}></img>
                 </a>
 
-                <a href='https://www.hackerrank.com/abhaybalip' target="_blank">
+                <a href={HackerRankLink} target="_blank">
                     <img id='link-img' src={HackerRankImg}></img>
                 </a>
 
             </div>
+
 
         </div>
     )

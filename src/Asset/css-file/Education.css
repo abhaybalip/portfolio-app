@@ -24,10 +24,7 @@
     transform: scale(1.25);
 }
 
-pre {
-    margin: 0px;
-}
 
 li {
-    padding: 0.7rem;
+    padding: 0.5rem;
 }

@@ -20,11 +20,12 @@ export function Education() {
                     borderRadius: '1rem',
                     marginRight: '0.5rem'
                 }}></img>
-                <p>
+                <div>
                     My-Education Details
-                </p>
+                </div>
             </h3>
-            <pre>
+
+            <div>
                 <ul>
                     <li>B.E. CSE
                         @MumbaiUniversity - BVCOENM
@@ -41,7 +42,7 @@ export function Education() {
                         KVM.D Mumbai
                     </li>
                 </ul>
-            </pre>
+            </div>
         </div>
     )
 }
