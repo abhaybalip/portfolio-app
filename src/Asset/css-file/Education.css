@@ -16,13 +16,13 @@
     border-radius: 1rem;
     color: #FFFFFF;
 
-    transition: all 0.25s;
+    /* transition: all 0.25s; */
 }
 
-#edu-body>h3:hover {
+/* #edu-body>h3:hover {
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.8);
     transform: scale(1.25);
-}
+} */
 
 
 li {

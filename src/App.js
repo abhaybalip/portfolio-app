@@ -27,7 +27,6 @@ export default class App extends React.Component {
           <a href="#edu-body">Education</a>
           <a href="#exp-body">Experiece</a>
           <a href={this.ResumeLink}>@Resume</a>
-
         </nav>
       </div>
     )

@@ -3,7 +3,7 @@ import '../Asset/css-file/About.css'
 
 const AboutIcon = require('../Asset/img-file/Head-Icon/About-Icon.jpg')
 
-const UserImgPath = require('../Asset/img-file/UserPhoto.jpg'),
+const UserImg = require('../Asset/img-file/UserPhoto.jpg'),
     EmailImg = require('../Asset/img-file/Email-img.jpg'),
     LikedinImg = require('../Asset/img-file/Linkedin-img.jpg'),
     GithubImg = require('../Asset/img-file/Github-img.jpg'),
@@ -63,7 +63,7 @@ export function About() {
 
                     padding: '1rem 0 1rem 0'
                 }}>
-                    <div id='about-img' src={UserImgPath} alt="user-image"></div>
+                    <div id='about-img' src={UserImg} alt="user-image"></div>
                     <div>
                         Abhay Arun Balip
                     </div>

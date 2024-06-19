@@ -15,13 +15,13 @@
     padding: 1rem;
     border-radius: 1rem;
 
-    transition: all 0.25s;
+    /* transition: all 0.25s; */
 }
 
-#exp-body>h3:hover {
+/* #exp-body>h3:hover {
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.8);
     transform: scale(1.25);
-}
+} */
 
 
 p {
