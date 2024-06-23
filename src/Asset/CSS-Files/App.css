@@ -1,7 +1,11 @@
+/* Entire App */
 .app {
+    width: 100%;
     user-select: none;
 }
 
+
+/* App Header */
 .app-header {
     width: 100%;
     height: auto;
@@ -14,14 +18,15 @@
     font-size: 5vw;
 
     border: 1px solid black;
-    border-radius: 1.5rem;
+    border-radius: 1.5em;
 
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.5em;
+    margin-top: 0.5em;
 }
 
 .navbar {
-    font-size: 3vw;
+    font-size: 3.5vw;
 
     margin: 0.5em;
     overflow: scroll;
@@ -33,10 +38,31 @@
 
 .nav-link {
     margin: 0.5rem;
+    padding: 0.5em;
+
 }
 
+.nav-link:hover{
+    border: 1px dashed black;
+}
+
+
+/* App Center */
 .app-body {
     width: 100%;
 
     border: 1px solid black;
+}
+
+/* App Footer */
+.app-footer{
+    width: 100%;
+    font-size: 2.5vw;
+
+    text-align: center;
+
+    padding: 0.5em 0em 0.5em 0em ;
+
+    border: 1px solid black;
+
 }
