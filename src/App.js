@@ -3,6 +3,7 @@ import React from 'react';
 
 import './Asset/CSS-Files/App.css'
 import About from './Component/About'
+import Education from './Component/Education'
 
 class App extends React.Component {
   constructor() {
@@ -33,6 +34,7 @@ class App extends React.Component {
     return (
       <div className='app-body'>
         {About()}
+        {Education()}
       </div>
     )
   }

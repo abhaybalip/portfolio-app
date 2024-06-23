@@ -18,9 +18,8 @@ function About() {
                 <img className='user-img' alt='UserImg' src={UserImg}></img>
                 <div className='about-info'>
                     Hello this is Abhay,<br/>
-                    I'm a Software engineer on a mission to craft
-                    software and tools that are both innovative and user-friendly.
-
+                    I'm a Software engineer on a mission to craft<br/>
+                    software and tools that are both innovative and user-friendly.<br/>
                 </div>
             </div>
         </div>
