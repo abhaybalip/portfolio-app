@@ -1,0 +1,51 @@
+.skill {
+    width: 100%;
+}
+
+.skill-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /* padding: 1em; */
+    border: 1px solid black;
+}
+
+.skill-icon {
+    height: 5vw;
+    width: 5vw;
+
+    margin: 0.5rem;
+}
+
+.skill-title {
+    font-size: 4vw;
+
+    margin: 0.5rem;
+}
+
+.skill-body {
+    font-size: 2.5vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0.5em;
+}
+
+.list-item-icon{
+    height: 5vw;
+    width: 5vw;
+
+    padding: 0.5em;
+    margin: 0 0.5em 0 0.5em;
+
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+.list-box{
+    padding: 0.5em;
+}

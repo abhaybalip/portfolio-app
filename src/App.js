@@ -1,9 +1,11 @@
 
 import React from 'react';
 
-import './Asset/CSS-Files/App.css'
-import About from './Component/About'
-import Education from './Component/Education'
+import './Asset/CSS-Files/App.css';
+import About from './Component/About';
+import Education from './Component/Education';
+import Skillset from './Component/Skillset';
+import Contact from './Component/Contact';
 
 class App extends React.Component {
   constructor() {
@@ -35,6 +37,8 @@ class App extends React.Component {
       <div className='app-body'>
         {About()}
         {Education()}
+        {Skillset()}
+        {Contact()}
       </div>
     )
   }
@@ -42,7 +46,7 @@ class App extends React.Component {
   App_Footer() {
     return (
       <div className='app-footer'>
-        Developed by @abhaybalip 💝 &copy; {this.currYear}
+        Developed by @abhaybalip 💝 Copyright &copy; {this.currYear}
       </div>
     )
   }
