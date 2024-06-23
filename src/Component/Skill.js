@@ -1,9 +1,9 @@
 
-function About(){
+function Skill(){
     return(
         <div className="about">
-            About
+            Skill
         </div>
     )
 } 
-export default About;
+export default Skill;
