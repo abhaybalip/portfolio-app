@@ -2,6 +2,7 @@
 import React from 'react';
 
 import './Asset/CSS-Files/App.css';
+
 import About from './Component/About';
 import Education from './Component/Education';
 import Skillset from './Component/Skillset';

@@ -2,6 +2,19 @@
 .app {
     width: 100%;
     user-select: none;
+    cursor: none;
+
+    animation: fadeIn 1.5s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 
@@ -42,7 +55,7 @@
 
 }
 
-.nav-link:hover{
+.nav-link:hover {
     border: 1px dashed black;
 }
 
@@ -54,13 +67,13 @@
 }
 
 /* App Footer */
-.app-footer{
+.app-footer {
     width: 100%;
     font-size: 2.5vw;
 
     text-align: center;
 
-    padding: 0.5em 0em 0.5em 0em ;
+    padding: 0.5em 0em 0.5em 0em;
 
     border: 1px solid black;
 
