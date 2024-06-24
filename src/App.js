@@ -13,12 +13,12 @@ class App extends React.Component {
   constructor() {
     super()
     this.currYear = new Date().getFullYear()
+    this.resumeLink = require('./Asset/CV_AbhayBalip.pdf')
   }
 
   App_Header() {
     return (
       <div className='app-header'>
-
         <div className='title'>Welcome To My Portfolio ❤️ </div>
 
         <div className='navbar'>
@@ -27,7 +27,7 @@ class App extends React.Component {
           <a href='#skill' className='nav-link'>Skillset</a>
           <a href='#exp' className='nav-link'>Experience</a>
           <a href='#contact' className='nav-link'>Contact</a>
-          <a href='#' className='nav-link'>Resume</a>
+          <a href={this.resumeLink} download="CV_AbhayBalip.pdf" className='nav-link'>Resume</a>
         </div>
 
       </div>

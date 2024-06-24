@@ -18,11 +18,11 @@
 }
 
 @keyframes fadeIn {
-    from {
+    0% {
         opacity: 0;
     }
 
-    to {
+    100% {
         opacity: 1;
     }
 }
@@ -68,11 +68,14 @@
 
     /* color theme */
     color: var(--link-color);
+
+    transition: all 0.25s linear;
 }
 
 .nav-link:hover {
-    color: var(--link-hover-color);
     border: 1px dotted var(--border-color);
+    background-color: var(--bg-color1);
+    color: var(--link-hover-color);
 }
 
 /* App Center */

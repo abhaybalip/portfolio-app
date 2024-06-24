@@ -2,33 +2,32 @@
     /* Text Colors */
     --text-color: #FFFFFF;
     /* White (Primary Text) */
-    --text-color1: #cccccc;
+    --text-color1: #CCCCCC;
     /* Light Gray (Secondary Text) */
 
     /* Background Colors */
-    --bg-color: #181818;
-    /* Slightly Lighter Dark Gray (Main Background) */
-    --bg-color1: #212121;
-    /* Even Lighter Dark Gray (Background for Cards/Sections) */
+    --bg-color: #1E1E1E;
+    /* Dark Gray (Main Background) */
+    --bg-color1: #2A2A2A;
+    /* Even Darker Gray (Background for Cards/Sections) */
 
     /* Links */
-    --link-color: #64b5f6;
-    /* Brighter Light Blue (original hover color) */
-    --link-hover-color: #4285f4;
-    /* Even brighter Light Blue */
-
+    --link-color: #4FC3F7;
+    /* Light Blue (Link Color) */
+    --link-hover-color: #42A5F5;
+    /* Brighter Blue (Link Hover Color) */
 
     /* Images */
-    --image-bg-color: #242424;
-    /* Slightly Darker Gray (Image Background) */
+    --image-bg-color: #333333;
+    /* Darker Gray (Image Background) */
 
     /* Borders */
-    --border-color: rgba(255, 255, 255, 0.5);
+    --border-color: rgba(255, 255, 255, 0.1);
     /* Very Light White (Borders) */
 
     /* Shadows */
-    --shadow-color: rgba(0, 0, 0, 0.2);
-    /* Dark Gray (Shadow Base) */
-    --shadow-offset: 0px 2px 4px;
-    /* Shadow Offset */
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    /* Darker Gray (Shadow Base) */
+    --shadow-offset: 0px 2px 6px;
+    /* Enhanced Shadow Offset */
 }
