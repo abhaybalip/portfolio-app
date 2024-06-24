@@ -1,0 +1,34 @@
+:root {
+    /* Text Colors */
+    --text-color: #FFFFFF;
+    /* White (Primary Text) */
+    --text-color1: #cccccc;
+    /* Light Gray (Secondary Text) */
+
+    /* Background Colors */
+    --bg-color: #181818;
+    /* Slightly Lighter Dark Gray (Main Background) */
+    --bg-color1: #212121;
+    /* Even Lighter Dark Gray (Background for Cards/Sections) */
+
+    /* Links */
+    --link-color: #64b5f6;
+    /* Brighter Light Blue (original hover color) */
+    --link-hover-color: #4285f4;
+    /* Even brighter Light Blue */
+
+
+    /* Images */
+    --image-bg-color: #242424;
+    /* Slightly Darker Gray (Image Background) */
+
+    /* Borders */
+    --border-color: rgba(255, 255, 255, 0.5);
+    /* Very Light White (Borders) */
+
+    /* Shadows */
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    /* Dark Gray (Shadow Base) */
+    --shadow-offset: 0px 2px 4px;
+    /* Shadow Offset */
+}

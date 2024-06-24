@@ -1,10 +1,14 @@
 
 import '../Asset/CSS-Files/Skillset.css';
-const SkillIcon = require('../Asset/Image/Icon/SkillIcon.png'),
-    LanguageIcon = require('../Asset/Image/SkillIcon/LanguageIcon.png'),
-    FrameworkIcon = require('../Asset/Image/SkillIcon/FrameworkIcon.png'),
-    DatabaseIcon = require('../Asset/Image/SkillIcon/DatabaseIcon.png'),
-    DevToolsIcon = require('../Asset/Image/SkillIcon/DevToolsIcon.png')
+
+const SkillIcon = require('../Asset/Image/Icon/SkillIcon.png')
+
+const Icon = {
+    LanguageIcon: require('../Asset/Image/SkillIcon/LanguageIcon.png'),
+    FrameworkIcon: require('../Asset/Image/SkillIcon/FrameworkIcon.png'),
+    DatabaseIcon: require('../Asset/Image/SkillIcon/DatabaseIcon.png'),
+    DevToolsIcon: require('../Asset/Image/SkillIcon/DevToolsIcon.png'),
+}
 
 function Skillset() {
     return (
@@ -21,7 +25,7 @@ function Skillset() {
 
                     <tr>
                         <td class="skill-list-item">
-                            <img class="list-item-icon" src={LanguageIcon}></img>
+                            <img class="list-item-icon" src={Icon.LanguageIcon}></img>
                         </td>
                         <td>
                             <div class="list-box">C/Cpp, Java, JavaScript, Python, Dart</div>
@@ -30,7 +34,7 @@ function Skillset() {
 
                     <tr>
                         <td class="skill-list-item">
-                            <img class="list-item-icon" src={FrameworkIcon}></img>
+                            <img class="list-item-icon" src={Icon.FrameworkIcon}></img>
                         </td>
                         <td>
                             <div class="list-box">Node.js, Flutter, Flask</div>
@@ -39,7 +43,7 @@ function Skillset() {
 
                     <tr>
                         <td class="skill-list-item">
-                            <img class="list-item-icon" src={DatabaseIcon}></img>
+                            <img class="list-item-icon" src={Icon.DatabaseIcon}></img>
                         </td>
                         <td>
                             <div class="list-box">SQL - MySQL, NoSQL - MongoDB</div>
@@ -48,7 +52,7 @@ function Skillset() {
 
                     <tr>
                         <td class="skill-list-item">
-                            <img class="list-item-icon" src={DevToolsIcon}></img>
+                            <img class="list-item-icon" src={Icon.DevToolsIcon}></img>
                         </td>
                         <td>
                             <div class="list-box">Git/GitHub, Docker, Postman</div>

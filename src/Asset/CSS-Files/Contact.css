@@ -1,5 +1,7 @@
 .contact {
     width: 100%;
+
+    border: 1px solid var(--border-color);
 }
 
 .contact-header {
@@ -9,14 +11,20 @@
     align-items: center;
 
     /* padding: 1em; */
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color1);
 }
 
 .contact-icon {
     height: 5vw;
     width: 5vw;
 
-    margin: 0.5rem;
+    margin: 0.25rem;
+    padding: 0.25rem;
+
+    border: 1px solid var(--border-color);
+    border-radius: 25%;
+    background-color: var(--image-bg-color);
 }
 
 .contact-title {
@@ -35,27 +43,27 @@
     padding: 0.5em;
 
     overflow: scroll;
+
+    /* border: 1px solid var(--border-color); */
 }
 
 .contact-link {
-    border: 1px solid black;
     border-radius: 50%;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background-color: grey;
+    background-color: var(--bg-color1);
+    border: 1px solid var(--border-color);
+
 }
 
 .contact-link-icon {
     height: 10vw;
     width: 10vw;
 
-    /* border: 1px solid black; */
     border-radius: 50%;
-
     padding: 1vw;
 }
-
 

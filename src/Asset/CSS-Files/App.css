@@ -2,9 +2,19 @@
 .app {
     width: 100%;
     user-select: none;
-    cursor: none;
 
     animation: fadeIn 1.5s linear;
+
+    /* color theme */
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+
+    color: var(--text-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes fadeIn {
@@ -23,23 +33,26 @@
     width: 100%;
     height: auto;
 
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
 }
 
 .title {
     text-align: center;
     font-size: 5vw;
 
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     border-radius: 1.5em;
 
     align-items: center;
     padding: 0.5em;
     margin-top: 0.5em;
+
+    /* color theme */
+    background-color: var(--bg-color1);
 }
 
 .navbar {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
 
     margin: 0.5em;
     overflow: scroll;
@@ -53,28 +66,31 @@
     margin: 0.5rem;
     padding: 0.5em;
 
+    /* color theme */
+    color: var(--link-color);
 }
 
 .nav-link:hover {
-    border: 1px dashed black;
+    color: var(--link-hover-color);
+    border: 1px dashed var(--border-color);
 }
 
 /* App Center */
 .app-body {
     width: 100%;
 
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
 }
 
 /* App Footer */
 .app-footer {
     width: 100%;
-    font-size: 2.5vw;
+    font-size: 2vw;
 
     text-align: center;
 
     padding: 0.5em 0em 0.5em 0em;
 
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
 
 }

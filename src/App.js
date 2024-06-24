@@ -1,6 +1,7 @@
 
 import React from 'react';
 
+import './Asset/CSS-Files/Theme.css';
 import './Asset/CSS-Files/App.css';
 
 import About from './Component/About';

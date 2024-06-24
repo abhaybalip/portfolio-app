@@ -33,27 +33,27 @@ function Contact() {
 
             <div className='contact-body'>
 
-                <a href={Link.phone} className='contact-link'>
+                <a target="_blank" href={Link.phone} className='contact-link'>
                     <img className='contact-link-icon' src={Icon.PhoneIcon}></img>
                 </a>
 
-                <a href={Link.mail} className='contact-link'>
+                <a target="_blank" href={Link.mail} className='contact-link'>
                     <img className='contact-link-icon' src={Icon.EmailIcon}></img>
                 </a>
 
-                <a href={Link.github} className='contact-link'>
+                <a target="_blank" href={Link.github} className='contact-link'>
                     <img className='contact-link-icon' src={Icon.GithubIcon}></img>
                 </a>
 
-                <a href={Link.hackerrank} className='contact-link'>
+                <a target="_blank" href={Link.hackerrank} className='contact-link'>
                     <img className='contact-link-icon' src={Icon.HackerrankIcon}></img>
                 </a>
 
-                <a href={Link.linkedin} className='contact-link'>
+                <a target="_blank" href={Link.linkedin} className='contact-link'>
                     <img className='contact-link-icon' src={Icon.LinkedinIcon}></img>
                 </a>
 
-                <a href={Link.instagram} className='contact-link'>
+                <a target="_blank" href={Link.instagram} className='contact-link'>
                     <img className='contact-link-icon' src={Icon.InstaIcon}></img>
                 </a>
 
