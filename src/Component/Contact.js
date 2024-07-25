@@ -17,8 +17,8 @@ const Link = {
     mail: 'mailto: mymail@gmail.com',
     github: 'https://www.github.com/abhaybalip/',
     hackerrank: 'https://www.hackerrank.com/abhaybalip/',
-    linkedin: 'https://www.linkedin.com/',
-    instagram: 'https://www.instagram.com/',
+    linkedin: 'https://www.linkedin.com/in/abhaybalip/',
+    instagram: 'https://www.instagram.com/abhaybalip/',
 }
 
 function Contact() {

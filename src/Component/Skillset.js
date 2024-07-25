@@ -28,7 +28,7 @@ function Skillset() {
                             <img class="list-item-icon" src={Icon.LanguageIcon}></img>
                         </td>
                         <td>
-                            <div class="list-box">C/Cpp, Java, JavaScript, Python, Dart</div>
+                            <div class="list-box">C/Cpp , Java , Python , Dart , TypeScript </div>
                         </td>
                     </tr>
 
@@ -37,7 +37,7 @@ function Skillset() {
                             <img class="list-item-icon" src={Icon.FrameworkIcon}></img>
                         </td>
                         <td>
-                            <div class="list-box">Node.js, Flutter, Flask</div>
+                            <div class="list-box">Web-Dev , Node.js , React js , Flutter-Dart , Flask-Python </div>
                         </td>
                     </tr>
 
@@ -46,7 +46,7 @@ function Skillset() {
                             <img class="list-item-icon" src={Icon.DatabaseIcon}></img>
                         </td>
                         <td>
-                            <div class="list-box">SQL - MySQL, NoSQL - MongoDB</div>
+                            <div class="list-box">Relational DB - MySQL(or similar) , non-Relational DB - MongoDB</div>
                         </td>
                     </tr>
 
@@ -55,7 +55,7 @@ function Skillset() {
                             <img class="list-item-icon" src={Icon.DevToolsIcon}></img>
                         </td>
                         <td>
-                            <div class="list-box">Git/GitHub, Docker, Postman</div>
+                            <div class="list-box">Git/GitHub , Figma , Docker , MS Azure (Basic Understanding & core services)</div>
                         </td>
                     </tr>
 
