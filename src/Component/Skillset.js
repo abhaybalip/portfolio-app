@@ -37,7 +37,7 @@ function Skillset() {
                             <img class="list-item-icon" src={Icon.FrameworkIcon}></img>
                         </td>
                         <td>
-                            <div class="list-box">Web-Dev , Node.js , React js , Flutter-Dart , Flask-Python </div>
+                            <div class="list-box">Web-Dev , Node.js , Flutter-Dart , Flask-Python , Java-SpringBoot (Beginner) </div>
                         </td>
                     </tr>
 
@@ -55,7 +55,7 @@ function Skillset() {
                             <img class="list-item-icon" src={Icon.DevToolsIcon}></img>
                         </td>
                         <td>
-                            <div class="list-box">Git/GitHub , Figma , Docker , MS Azure (Basic Understanding & core services)</div>
+                            <div class="list-box">Git/GitHub , Figma , Docker , MS Azure (Basic) </div>
                         </td>
                     </tr>
 
