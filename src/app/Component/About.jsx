@@ -1,5 +1,6 @@
 
 import Image from 'next/image';
+
 import '../Asset/CSS-Files/About.css';
 
 const AboutIcon = require('../Asset/Image/Icon/AboutIcon.png'),

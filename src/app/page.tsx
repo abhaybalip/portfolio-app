@@ -1,12 +1,16 @@
 
+// Next Lib 
 import 'next/image'
 
+// App component 
+import About from './Component/About'
+import Education from './Component/Education'
+import Skill from './Component/Skill'
+import Contact from './Component/Contact'
 
+// Asset 
 import './Asset/CSS-Files/Theme.css'
 import './Asset/CSS-Files/App.css'
-
-import About from './Component/About'
-
 
 const curYear = new Date().getFullYear()
 
@@ -21,7 +25,7 @@ function App_Header() {
         <a href='#skill' className='nav-link'>Skillset</a>
         <a href='#exp' className='nav-link'>Experience</a>
         <a href='#contact' className='nav-link'>Contact</a>
-        <a href={''} download="CV_AbhayBalip.pdf" className='nav-link'>Resume</a>
+        <a href={'#'} download="CV-AbhayBalip.pdf" className='nav-link'>Resume</a>
       </div>
 
     </div>
@@ -32,9 +36,9 @@ function App_Body() {
   return (
     <div className='app-body'>
       {About()}
-      {/* {Education()} */}
-      {/* {Skillset()} */}
-      {/* {Contact()} */}
+      {Education()}
+      {Skill()}
+      {Contact()}
     </div>
   )
 }
@@ -47,7 +51,7 @@ function App_Footer() {
   )
 }
 
-function Home(params:any) {
+function App(params:any) {
   return(
     <div className='app'>
     {App_Header()}
@@ -56,4 +60,4 @@ function Home(params:any) {
     </div>
   )  
 }
-export default Home;
+export default App;
