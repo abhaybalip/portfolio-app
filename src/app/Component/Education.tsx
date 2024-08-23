@@ -19,14 +19,14 @@ function Education() {
                         <div className='dot'>&bull;</div>
                         <div>
                             BE. ComputerEngineering GPA - 8.3 <br />
-                            MumbaiUniversity - BVCOENM
+                            MumbaiUniversity - BVCOENM | 2021-25
                         </div>
                     </div>
 
                     <div className='list-item'>
                         <div className='dot'>&bull;</div>
                         <div>
-                            MHT-CET - Entrance Exam 93.779 {'(PCM)'}
+                            MHT-CET - Engg Entrance Exam 93.779 {'(PCM)'}
                         </div>
 
                     </div>
@@ -35,7 +35,7 @@ function Education() {
                         <div className='dot'>&bull;</div>
                         <div>
                             HSC - Maharashtra State Board 86.33% {'(Science)'} <br />
-                            KBP.College
+                            KBP. College Vashi,Mumbai | 2019-21
                         </div>
 
                     </div>
@@ -45,7 +45,7 @@ function Education() {
                         <div className='dot'>&bull;</div>
                         <div>
                             SSC - Maharashtra State Board 85.20% <br />
-                            Kumud Vidyamandir Deonar, Mumbai
+                            Kumud Vidyamandir Deonar, Mumbai | 2019
                         </div>
 
                     </div>
