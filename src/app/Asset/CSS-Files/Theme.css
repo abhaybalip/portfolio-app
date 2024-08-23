@@ -1,0 +1,33 @@
+:root {
+    /* Text Colors */
+    --text-color: #FFFFFF;
+    /* White (Primary Text) */
+    --text-color1: #CCCCCC;
+    /* Light Gray (Secondary Text) */
+
+    /* Background Colors */
+    --bg-color: #1E1E1E;
+    /* Dark Gray (Main Background) */
+    --bg-color1: #2A2A2A;
+    /* Even Darker Gray (Background for Cards/Sections) */
+
+    /* Links */
+    --link-color: #4FC3F7;
+    /* Light Blue (Link Color) */
+    --link-hover-color: #42A5F5;
+    /* Brighter Blue (Link Hover Color) */
+
+    /* Images */
+    --image-bg-color: #333333;
+    /* Darker Gray (Image Background) */
+
+    /* Borders */
+    --border-color: rgba(255, 255, 255, 0.1);
+    /* Very Light White (Borders) */
+
+    /* Shadows */
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    /* Darker Gray (Shadow Base) */
+    --shadow-offset: 0px 2px 6px;
+    /* Enhanced Shadow Offset */
+}
