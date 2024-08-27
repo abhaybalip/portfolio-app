@@ -17,7 +17,7 @@ const curYear = new Date().getFullYear()
 function App_Header() {
   return (
     <div className='app-header'>
-      <div className='title'>Welcome To My Portfolio ❤️ </div>
+      <div className='title'>Welcome To My Portfolio 💝 </div>
 
       <div className='navbar'>
         <a href='#about' className='nav-link'>About</a>
@@ -25,7 +25,8 @@ function App_Header() {
         <a href='#skill' className='nav-link'>Skillset</a>
         <a href='#exp' className='nav-link'>Experience</a>
         <a href='#contact' className='nav-link'>Contact</a>
-        <a href={'#'} download="CV-AbhayBalip.pdf" className='nav-link'>Resume</a>
+        <a href={'https://docs.google.com/document/d/1tiuQVZMKxCCUWFQSHS2ckqPuhJt6eVVl2i1b_qmwQAM/edit?usp=drive_link'}
+          target='_blank' download="CV-AbhayBalip.pdf" className='nav-link'>Resume</a>
       </div>
 
     </div>
@@ -46,18 +47,18 @@ function App_Body() {
 function App_Footer() {
   return (
     <div className='app-footer'>
-      Developed by @abhaybalip 💝 Copyright &copy; {curYear}
+      Developed by @abhaybalip Copyright &copy; {curYear}
     </div>
   )
 }
 
-function App(params:any) {
-  return(
+function App(params: any) {
+  return (
     <div className='app'>
-    {App_Header()}
-    {App_Body()}
-    {App_Footer()}
+      {App_Header()}
+      {App_Body()}
+      {App_Footer()}
     </div>
-  )  
+  )
 }
 export default App;
