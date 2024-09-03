@@ -1,3 +1,4 @@
+"use client"
 
 // Next Lib 
 import 'next/image'
@@ -11,6 +12,8 @@ import Contact from './Component/Contact'
 // Asset 
 import './Asset/CSS-Files/Theme.css'
 import './Asset/CSS-Files/App.css'
+import Image from 'next/image'
+import { useState } from 'react'
 
 const curYear = new Date().getFullYear()
 
@@ -52,12 +55,44 @@ function App_Footer() {
   )
 }
 
-function App(params: any) {
+function Loading() {
   return (
-    <div className='app'>
-      {App_Header()}
-      {App_Body()}
-      {App_Footer()}
+    <div className='load'>
+      <Image src={require('./Asset/Image/Loading.gif')} alt={"loading"}></Image>
+    </div>
+  )
+}
+
+function App(params: any) {
+
+  const [IsLoading, setIsLoading] = useState(true)
+  var timer = setTimeout(() => {
+    setIsLoading(false)
+
+    return ()=>{
+      clearTimeout(timer)
+    }
+  }, 1500);
+  return (
+    <div>
+      {
+        IsLoading ?
+          <div style={{
+            display: 'flex',
+            justifyContent: 'space-evenly',
+            alignItems: 'center',
+
+            height: '100vh',
+            width: '100vw',
+          }}>
+            <Image src={require('./Asset/Image/Loading.gif')} alt='loading'></Image>
+          </div> :
+          <div className='app'>
+            {App_Header()}
+            {App_Body()}
+            {App_Footer()}
+          </div>
+      }
     </div>
   )
 }
