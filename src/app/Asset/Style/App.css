@@ -1,12 +1,14 @@
 #app {
-    height: 300vh;
+    height: 100vh;
     width: 100%;
+    overflow-x: scroll;
+
+    user-select: none;
+
+    position: relative;
 
     background-color: var(--background-color);
     color: var(--text-color);
-
-    user-select: none;
-    position: relative;
 }
 
 .app-nav {
@@ -16,10 +18,9 @@
     z-index: 10;
 
     background-color: var(--background-color);
-    color: var(--accent-color);
+    color: var(--text-color);
 
-    text-decoration: none;
-
+    
 }
 
 /* big navbar */
@@ -37,7 +38,6 @@
     margin: 0em;
 
     font-size: 1.25rem;
-
 }
 
 .app-nav-s,
@@ -122,8 +122,9 @@
     padding: 0.25em;
 }
 
-.app-m{
+.app-main{
     position: relative;
     top: auto;
     padding: 07rem 20rem 02rem 02rem;
 }
+

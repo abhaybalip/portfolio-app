@@ -1,10 +1,10 @@
 
+import Home from "./Home";
+
 const NavList = [
     // name : path : component
     {
-        name: 'Home', path: '/', component: null
-    }, {
-        name: 'About', path: '/', component: null
+        name: 'Home', path: '/', component: Home
     }, {
         name: 'Education', path: '/', component: null
     }, {

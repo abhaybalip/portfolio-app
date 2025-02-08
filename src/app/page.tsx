@@ -4,13 +4,13 @@
 // modules
 import Head from 'next/head';
 import React from 'react';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 // react-icons
 import { FaArrowCircleUp, FaBars, FaTimes } from 'react-icons/fa';
 
 // component
-import HeroSection_App from './Component/HeroSection';
+import Home from './Asset/Home';
 
 // Data
 import NavList from './Asset/NavData';
@@ -32,14 +32,14 @@ function HomePage() {
 
   return (
     <>
-    {/* main app */}
+      {/* main app */}
       <div id='app'>
 
         {/* app nav section */}
         <div className='app-nav'>
 
           {/* big navbar */}
-          <nav className='app-nav-bar'>
+          <div className='app-nav-bar'>
             {
               NavList.map((item, index) => {
                 return (
@@ -47,7 +47,7 @@ function HomePage() {
                 )
               })
             }
-          </nav>
+          </div>
 
           {/* small navbar */}
           <div className='app-nav-s'>
@@ -88,11 +88,17 @@ function HomePage() {
         </div>
 
         {/* app-main section */}
-        <div className='app-m'>
+        <div className='app-main'>
           <BrowserRouter>
-              <Routes>
-                <Route path='/' element={<HeroSection_App></HeroSection_App>} />
-              </Routes>
+            <Routes>
+              {
+                NavList.map((item, index) => {
+                  return (
+                    <Route key={index} path={item.path} Component={item.component}>{item.name}</Route>
+                  )
+                })
+              }
+            </Routes>
           </BrowserRouter>
         </div>
 
