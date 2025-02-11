@@ -1,4 +1,3 @@
-
 'use client';
 
 // modules
@@ -10,7 +9,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { FaArrowCircleUp, FaBars, FaTimes } from 'react-icons/fa';
 
 // component
-import Home from './Asset/Home';
+import './Asset/Script/App'
 
 // Data
 import NavList from './Asset/NavData';
@@ -18,17 +17,9 @@ import NavList from './Asset/NavData';
 // Styles
 import './Asset/Style/App.css';
 
-function HomePage() {
+function MainPage() {
 
   const [navVisible, setNavVisible] = React.useState(false);
-  const [topButtonVisible, setTopButtonVisible] = React.useState(false);
-  window.onscroll = (scroll) => {
-    if (window.scrollY > 3) {
-      setTopButtonVisible(true);
-    } else {
-      setTopButtonVisible(false);
-    }
-  }
 
   return (
     <>
@@ -74,15 +65,7 @@ function HomePage() {
 
           {/* goto top button */}
           <div>
-            {<FaArrowCircleUp
-              onClick={() => {
-                window.scrollTo({
-                  top: 0,
-                  behavior: 'smooth'
-                });
-              }} className='nav-top-b' style={{
-                visibility: topButtonVisible ? 'visible' : 'hidden'
-              }} />}
+            {<FaArrowCircleUp className='nav-top-b'/>}
           </div>
 
         </div>
@@ -114,5 +97,4 @@ function HomePage() {
   )
 }
 
-export default HomePage;
-
+export default MainPage;

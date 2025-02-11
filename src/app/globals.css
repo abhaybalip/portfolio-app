@@ -41,7 +41,6 @@ a {
   }
 } */
 
-
 html,
 body {
   max-width: 100%;
@@ -49,30 +48,32 @@ body {
 
   margin: 0;
 
-  /* border: 1px solid red; */
+  background-color: var(--background-color);
 }
-
 
 :root {
-  --background-color: #000;
-  /* Black background */
-  --text-color: #fff;
-  /* White text */
-  --primary-color: #333;
-  /* Dark gray - for highlights, buttons, etc. */
-  --secondary-color: #666;
-  /* Medium gray - for subtle accents */
-  --border-color: #999;
-  /* Light gray - for borders and dividers */
-  --accent-color: #ccc;
-  /* Very light gray - for subtle highlights or interactive elements */
+  --background-color: #000;  /* Black background */
+  --text-color: #fff;        /* White text */
+  --primary-color: #fff;     /* White for highlights, buttons, etc. */
+  --secondary-color: #999;   /* Light gray - subtle accents */
+  --border-color: #444;      /* Darker gray for borders and dividers */
+  --accent-color: #fff;      /* White for subtle highlights or interactive elements */
 
-  /* You can also define shades of gray as variables if needed */
-  --gray-100: #f0f0f0;
-  /* Very light gray */
-  --gray-200: #e0e0e0;
-  --gray-300: #d0d0d0;
-  /* ... and so on */
+  /* You can define other grays if needed */
+  --gray-100: #f0f0f0; /* Very light gray */
+  --gray-200: #d0d0d0; /* Light gray */
+  --gray-300: #a0a0a0; /* Medium gray */
+  --gray-400: #707070; /* Darker gray */
+
+  /* font size */
+  /* big screen */
+  --fontsize-1: 1.5vw;
+  --fontsize-2: 2.5vw;
+  --fontsize-3: 3vw;
+
+  /* small screen */
+  --fontsize-s-1: 2.5vw;
+  --fontsize-s-2: 3.5vw;
+  --fontsize-s-3: 5vw;
+
 }
-
-

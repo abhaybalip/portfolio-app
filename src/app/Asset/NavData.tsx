@@ -1,19 +1,17 @@
+import About from "./Component/About";
+import Education from "./Component/Education";
 
-import Home from "./Home";
 
 const NavList = [
     // name : path : component
     {
-        name: 'Home', path: '/', component: Home
+        name: 'About', path: '/#about', component: About
     }, {
-        name: 'Education', path: '/', component: null
+        name: 'Education', path: '/#education', component: Education
     }, {
-        name: 'Skillset', path: '/', component: null
+        name: 'Skillset', path: '/#skillset', component: null
     }, {
-        name: 'Contact', path: '/', component: null
+        name: 'Contact', path: '/#contact', component: null
     },
 ]
 export default NavList;
-
-
-
