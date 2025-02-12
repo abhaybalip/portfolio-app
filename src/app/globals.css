@@ -43,29 +43,38 @@ a {
 
 html,
 body {
-  width: 100%;
-  max-width: 100vw;
-  /* overflow-x: hidden; */
+  width: 100vw;
+  overflow: auto;
 
   margin: 0;
   padding: 0;
 
-  /* background-color: var(--background-color); */
+  background-color: var(--background-color);
 }
 
 :root {
-  --background-color: #000;  /* Black background */
-  --text-color: #fff;        /* White text */
-  --primary-color: #fff;     /* White for highlights, buttons, etc. */
-  --secondary-color: #999;   /* Light gray - subtle accents */
-  --border-color: #444;      /* Darker gray for borders and dividers */
-  --accent-color: #fff;      /* White for subtle highlights or interactive elements */
+  --background-color: #000;
+  /* Black background */
+  --text-color: #fff;
+  /* White text */
+  --primary-color: #fff;
+  /* White for highlights, buttons, etc. */
+  --secondary-color: #999;
+  /* Light gray - subtle accents */
+  --border-color: #444;
+  /* Darker gray for borders and dividers */
+  --accent-color: #fff;
+  /* White for subtle highlights or interactive elements */
 
   /* You can define other grays if needed */
-  --gray-100: #f0f0f0; /* Very light gray */
-  --gray-200: #d0d0d0; /* Light gray */
-  --gray-300: #a0a0a0; /* Medium gray */
-  --gray-400: #707070; /* Darker gray */
+  --gray-100: #f0f0f0;
+  /* Very light gray */
+  --gray-200: #d0d0d0;
+  /* Light gray */
+  --gray-300: #a0a0a0;
+  /* Medium gray */
+  --gray-400: #707070;
+  /* Darker gray */
 
   /* font size */
   /* big screen */
