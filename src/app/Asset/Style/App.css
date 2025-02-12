@@ -1,149 +1,142 @@
 .app {
-    height: auto;
     width: 100%;
-
-    position: relative;
 
     background-color: var(--background-color);
     color: var(--text-color);
+    /* border: 1px solid var(--border-color); */
 
-    border: 1px solid var(--border-color);
+    font-family: 'Inter', sans-serif;
+    font-size: var(--fontsize-2);
 
+    position: relative;
+
+    margin: 0;
+    padding: 0;
     user-select: none;
 }
 
 .app-nav {
     width: 100%;
+    border: 1px solid #444;
 
-    position: fixed;
-    top: 0;
-    z-index: 10;
+    .nav-l {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
 
-    background-color: var(--background-color);
-    border: 1px solid var(--border-color);
+        .nav-li {
+            text-decoration: none;
+            color: var(--primary-color);
+            padding: var(--space-md);
 
-    font-size: var(--fontsize-3);
+            cursor: pointer;
+        }
+    }
 }
 
-/* big navbar */
-.app-nav-bar {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-}
-
-.nav-bar-item {
-    padding: 2em;
-    margin: 0em;
-
-    font-size: 1.25rem;
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
-.app-nav-s,
-.nav-s-list,
+/* Initially small nav off */
+.nav-s,
 .nav-s-b,
 .nav-s-l {
     display: none;
 }
 
-/* small navtab */
-@media (max-width: 800px) {
-    .app-nav-bar {
-        display: none;
-    }
-
-    .app-nav-s,
-    .nav-s-list,
-    .nav-s-b,
-    .nav-s-l {
-        display: flex;
-    }
+.nav-s {
+    width: 100%;
 }
 
 .nav-s-b {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: var(--space-lg);
+    width: var(--space-lg);
 
-    margin: 0.5em 0 0 0.5em;
+    color: white;
 
-    cursor: pointer;
+    margin: 1rem;
 }
 
-.nav-s-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: left;
+.nav-s-bc {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
 
-    padding: 0 0.5em 0 0.5em;
+    height: var(--space-lg);
+    width: var(--space-lg);
+
+    color: white;
 }
 
 .nav-s-l {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: left;
-}
+    position: absolute;
+    left: -100%;
+    top: 0;
 
-.nav-s-li {
-    padding: 01.5em;
-    margin: 0em;
+    transition: all linear 0.5s;
 
-    font-size: 1.25rem;
+    height: 100%;
+    width: 100%;
+    background-color: var(--border-color);
+    color: var(--text-color);
 
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
-.nav-top-b {
-    height: 2rem;
-    width: 2rem;
-
-    opacity: 0.5;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
 
     display: none;
-
-    cursor: pointer;
-
-    visibility: hidden;
 }
 
-.app-footer {
+.nav-s-l.open {
+    display: block;
+    transform: translateX(100%);
+}
+
+
+@media (max-width: 800px) {
+    .nav {
+        display: none;
+    }
+
+    .nav-s,
+    .nav-s-b,
+    .nav-s-l {
+        display: block;
+    }
+}
+
+.nav-s-ll {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 
-    border: 1px solid var(--border-color);
-    color: var(--secondary-color);
+    .nav-s-li {
+        padding: var(--space-md);
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+}
 
-    width: auto;
+.app-main {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: var(--space-sm);
 
     font-size: var(--fontsize-1);
 }
 
-@media (max-width:800px) {
-    .app-footer {
-        font-size: var(--fontsize-s-1);
-    }
-}
+.app-foot {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 
-.app-footer>* {
-    padding: 0.25em;
-}
-
-.app-main {
-    height: 100vh;
-    width: auto;
+    font-size: var(--fontsize-1);
+    text-align: center;
 
     border: 1px solid var(--border-color);
-    padding: 0.5rem;
 }
 
+.app-foot>* {
+    padding-top: var(--space-xs);
+    font-size: var(--fontsize-1);
+}

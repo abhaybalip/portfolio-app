@@ -1,0 +1,80 @@
+'use client';
+
+import Link from "next/link";
+import React from "react";
+
+import { IoIosMenu, IoMdClose } from "react-icons/io";
+
+import { NavList } from './AppData'
+
+import '../globals.css'
+import './Style/App.css'
+
+import './Script/App'
+
+const app_nav = () => {
+    const [isNavOpen, setisNavOpen] = React.useState(false)
+
+    return (
+        <div className="app-nav">
+            <div className="nav">
+                <div className="nav-l">
+                    {
+                        NavList.map((item, index) => {
+                            return (
+                                <Link key={index} href={item.path} className="nav-li">{item.name}</Link>
+                            )
+                        })
+                    }
+                </div>
+            </div>
+
+            <div className="nav-s">
+                <div className="nav-s-b">
+                    {<IoIosMenu className="nav-s-b" onClick={() => setisNavOpen(true)}></IoIosMenu>}
+                </div>
+                <div className={`nav-s-l ${isNavOpen ? "open" : ""}`}>
+                    <div className="nav-s-bc">
+                        {<IoMdClose className="nav-s-bc" onClick={() => setisNavOpen(false)}></IoMdClose>}
+                    </div>
+                    <div className="nav-s-ll">
+                        {
+                            NavList.map((item, index) => {
+                                return (
+                                    <Link key={index} href={item.path} className="nav-s-li">{item.name}</Link>
+                                )
+                            })
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+const app_foot = () => {
+    return (
+        <div className="app-foot">
+            <div>Thank You for Visiting 💝</div>
+            <code>Developed By @AbhayBalip &copy;-{new Date().getFullYear()}</code>
+        </div>
+    )
+}
+const AppLayout = (main: any) => {
+    return (
+        <div id="app" className="app">
+            {
+                app_nav()
+            }
+            <div className="app-main">
+                {
+                    main()
+                }
+            </div>
+            {
+                app_foot()
+            }
+        </div>
+    )
+}
+export default AppLayout;
+

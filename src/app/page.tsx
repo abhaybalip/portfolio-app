@@ -1,17 +1,16 @@
 'use client';
 
-import { App_ } from "./Asset/AppBody"
+import AppLayout from "./Asset/AppLayout";
 
-const home_page = () => {
+const about_page = () => {
   return (
-    <div>
+    <>
       about page
-    </div>
+    </>
   )
 }
 
-export default function HomePage(params: any) {
-  return (
-    App_(home_page)
-  )
+const page = () => {
+  return AppLayout(about_page)
 }
+export default page;
