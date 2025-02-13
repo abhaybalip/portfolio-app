@@ -7,7 +7,9 @@ const NavList = [
     }, {
         name: 'Skilset', path: '/'
     }, {
-        name: 'Contact', path: '/'
+        name: 'link-me', path: '/'
+    }, {
+        name: 'Resume', path: '/'
     },
 ]
-export {NavList};
+export { NavList };

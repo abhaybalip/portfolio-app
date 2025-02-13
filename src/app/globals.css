@@ -56,61 +56,50 @@ body {
 
 :root {
   /* Color Palette */
-  --background-color: #000;
-  /* Black background */
-  --text-color: #fff;
-  /* White text */
-  --primary-color: #fff;
-  /* White for highlights, buttons, etc. */
-  --secondary-color: #999;
-  /* Light gray - subtle accents */
-  --border-color: #444;
-  /* Darker gray for borders and dividers */
-  --accent-color: #fff;
-  /* White for subtle highlights or interactive elements */
+  --background-color: #000; /* Black background */
+  --text-color: #fff; /* White text */
+  --primary-color: #fff; /* White for highlights, buttons, etc. */
+  --secondary-color: #999; /* Light gray - subtle accents */
+  --border-color: #444; /* Darker gray for borders and dividers */
+  --accent-color: #fff; /* White for subtle highlights or interactive elements */
 
   /* Grayscale colors for depth */
-  --gray-100: #f0f0f0;
-  /* Very light gray */
-  --gray-200: #d0d0d0;
-  /* Light gray */
-  --gray-300: #a0a0a0;
-  /* Medium gray */
-  --gray-400: #707070;
-  /* Darker gray */
+  --gray-100: #f0f0f0; /* Very light gray */
+  --gray-200: #d0d0d0; /* Light gray */
+  --gray-300: #a0a0a0; /* Medium gray */
+  --gray-400: #707070; /* Darker gray */
 
-  /* Font sizes */
+  /* Font sizes (responsive with clamp) */
   --fontsize-1: clamp(1rem, 1.5vw, 2rem);
   --fontsize-2: clamp(1.5rem, 2.5vw, 3rem);
   --fontsize-3: clamp(2rem, 3.5vw, 4rem);
 
+  /* Small Screen (Mobile) - Adaptive Font Sizes */
+  --fontsize-s-1: clamp(0.8rem, 5vw, 1.5rem); /* Small titles */
+  --fontsize-s-2: clamp(1rem, 7vw, 2rem); /* Headings */
+  --fontsize-s-3: clamp(1.2rem, 8vw, 2.5rem); /* Larger text */
 
-  /* Small Screen (Mobile) */
-  --fontsize-s-1: 5vw;
-  /* 5% of viewport width for small titles */
-  --fontsize-s-2: 7vw;
-  /* 7% of viewport width for headings */
-  --fontsize-s-3: 8vw;
-  /* 8% of viewport width for larger text */
-
-  /* General spacing (use rem for more predictable scaling) */
-  --space-xs: 0.5rem;
-  /* 8px */
-  --space-sm: 1rem;
-  /* 16px */
-  --space-md: 2rem;
-  /* 32px */
-  --space-lg: 3rem;
-  /* 48px */
-  --space-xl: 4rem;
-  /* 64px */
+  /* General spacing (fluid scaling) */
+  --space-xs: clamp(0.25rem, 1vw, 0.5rem); /* 4px - 8px */
+  --space-sm: clamp(0.5rem, 1.5vw, 1rem); /* 8px - 16px */
+  --space-md: clamp(1rem, 2vw, 2rem); /* 16px - 32px */
+  --space-lg: clamp(1.5rem, 3vw, 3rem); /* 24px - 48px */
+  --space-xl: clamp(2rem, 4vw, 4rem); /* 32px - 64px */
 
   /* Border radius for rounded elements */
-  --border-radius: 0.5rem;
-  /* For buttons, containers, etc. */
-  --max-width: 90vw;
-  /* 90% of the viewport width for container elements */
+  --border-radius: clamp(0.25rem, 1vw, 0.5rem); /* Adaptive border radius */
+  
+  /* Max container width (adaptive) */
+  --max-width: clamp(80vw, 90vw, 1200px); /* Ensures responsive layout */
+  --max-width-content: clamp(80vw, 90vw, 1440px); /* Adaptive content max width */
 
-  /* screen breakpoint */
-  --small-screen: 800px
+  /* Image sizes (adaptive for different screen sizes) */
+  --len-sm: clamp(30px, 5vw, 50px); /* Small icons, avatars */
+  --len-md: clamp(80px, 10vw, 150px); /* Medium-sized images */
+  --len-lg: clamp(200px, 20vw, 300px); /* Large images */
+  --len-xl: 100%; /* Full-width images */
+
+
+  /* Screen breakpoint */
+  --small-screen: 800px;
 }

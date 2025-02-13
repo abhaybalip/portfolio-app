@@ -55,11 +55,11 @@ const app_foot = () => {
     return (
         <div className="app-foot">
             <div>Thank You for Visiting 💝</div>
-            <code>Developed By @AbhayBalip &copy;-{new Date().getFullYear()}</code>
+            <code>Developed By @AbhayBalip </code>
         </div>
     )
 }
-const AppLayout = (main: any) => {
+const AppLayout = ({ main }: any) => {
     return (
         <div id="app" className="app">
             {
@@ -67,7 +67,7 @@ const AppLayout = (main: any) => {
             }
             <div className="app-main">
                 {
-                    main()
+                    main
                 }
             </div>
             {
