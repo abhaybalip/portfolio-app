@@ -3,7 +3,7 @@ const NavList = [
     {
         name: 'About', path: '/'
     }, {
-        name: 'Education', path: '/'
+        name: 'Education', path: '/education'
     }, {
         name: 'Skilset', path: '/'
     }, {

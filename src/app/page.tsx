@@ -1,6 +1,5 @@
 'use client';
 
-import Image from "next/image";
 import AppLayout from "./asset/AppLayout";
 
 import './globals.css'
@@ -34,7 +33,7 @@ const about_page = () => {
 }
 
 
-const page = () => {
+function page(){
   return AppLayout({ main: about_page() })
 }
 export default page;
