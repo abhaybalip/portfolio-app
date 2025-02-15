@@ -1,67 +1,66 @@
-.app-main-con {
+.app-main-skills {
     width: 100%;
     max-width: var(--max-width);
-
+    margin: auto;
     text-align: center;
+    padding: var(--space-lg);
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
-.con-title {
+.skills-title {
     font-size: var(--fontsize-2);
     font-weight: bold;
     color: var(--primary-color);
-    margin: var(--space-sm);
+    margin-bottom: var(--space-md);
 }
 
-.con-text {
-    font-size: var(--fontsize-1);
-    color: var(--secondary-color);
-    margin: var(--space-md);
-}
-
-.con-links {
+.skills-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: var(--space-md);
-    align-items: center;
-
 }
 
-.con-link {
+.skill-box {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: var(--space-xs);
-
     font-size: var(--fontsize-1);
+    font-weight: 500;
+    text-transform: uppercase;
     text-decoration: none;
-    color: var(--accent-color);
-
-
-    width: 100%;
-    max-width: 300px;
+    color: var(--text-color);
     padding: var(--space-sm) var(--space-md);
-
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
-
-    transition: all 0.25s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-.con-link:hover {
+.skill-box:hover {
     background-color: var(--accent-color);
     color: var(--background-color);
     transform: scale(1.05);
     box-shadow: 0 0 10px var(--gray-400);
 }
 
+/* Responsive */
 @media (max-width: var(--small-screen)) {
-    .app-main-con {
+    .app-main-skills {
         padding: var(--space-sm);
     }
 
-    .con-link {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-box {
         font-size: var(--fontsize-s-1);
+        width: 80%;
     }
 }
