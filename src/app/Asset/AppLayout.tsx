@@ -12,7 +12,7 @@ import './Style/App.css'
 
 import './Script/App'
 
-const app_nav = () => {
+const AppNav = () => {
     const [isNavOpen, setisNavOpen] = React.useState(false)
 
     return (
@@ -51,7 +51,7 @@ const app_nav = () => {
         </div>
     )
 }
-const app_foot = () => {
+const AppFoot = () => {
     return (
         <div className="app-foot">
             <div>Thank You for Visiting 💝</div>
@@ -59,11 +59,11 @@ const app_foot = () => {
         </div>
     )
 }
-const AppLayout = ({ main }: any) => {
+const AppLayout = ({ main }: { main: React.ReactNode }) => {
     return (
         <div id="app" className="app">
             {
-                app_nav()
+                AppNav()
             }
             <div className="app-main">
                 {
@@ -71,7 +71,7 @@ const AppLayout = ({ main }: any) => {
                 }
             </div>
             {
-                app_foot()
+                AppFoot()
             }
         </div>
     )
