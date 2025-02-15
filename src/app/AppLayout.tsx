@@ -59,7 +59,8 @@ const AppFoot = () => {
         </div>
     )
 }
-const AppLayout = ({ main }: { main: React.ReactNode }) => {
+
+function AppLayout({ main }: { main: React.ReactNode }) {
     return (
         <div id="app" className="app">
             {
@@ -76,4 +77,4 @@ const AppLayout = ({ main }: { main: React.ReactNode }) => {
         </div>
     )
 }
-export {AppLayout};
+export default AppLayout;
