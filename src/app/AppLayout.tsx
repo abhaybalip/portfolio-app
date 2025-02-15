@@ -5,12 +5,12 @@ import React from "react";
 
 import { IoIosMenu, IoMdClose } from "react-icons/io";
 
-import { NavList } from './AppData'
+import { NavList } from './asset/AppData'
 
 import '../globals.css'
 import './Style/App.css'
 
-import './Script/App'
+import './asset/Script/App'
 
 const AppNav = () => {
     const [isNavOpen, setisNavOpen] = React.useState(false)
@@ -76,5 +76,4 @@ const AppLayout = ({ main }: { main: React.ReactNode }) => {
         </div>
     )
 }
-export default AppLayout;
-
+export {AppLayout};
