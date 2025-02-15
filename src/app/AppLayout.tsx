@@ -8,7 +8,7 @@ import { IoIosMenu, IoMdClose } from "react-icons/io";
 import { NavList } from './asset/AppData'
 
 import '../globals.css'
-import './Style/App.css'
+import './asset/Style/App.css'
 
 import './asset/Script/App'
 
