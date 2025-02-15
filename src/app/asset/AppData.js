@@ -5,9 +5,9 @@ const NavList = [
     }, {
         name: 'Education', path: '/education'
     }, {
-        name: 'Skilset', path: '/'
+        name: 'Skillset', path: '/'
     }, {
-        name: 'link-me', path: '/'
+        name: 'link-me', path: '/contact'
     }, {
         name: 'Resume', path: '/'
     },

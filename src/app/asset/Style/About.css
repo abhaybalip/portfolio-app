@@ -1,4 +1,8 @@
-.app-main-abt {}
+.app-main-abt {
+    width: 100%;
+    max-width: var(--max-width);
+
+}
 
 .abt-img1 {
     height: var(--len-lg);
