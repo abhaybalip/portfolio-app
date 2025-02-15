@@ -7,10 +7,9 @@ import { IoIosMenu, IoMdClose } from "react-icons/io";
 
 import { NavList } from "./AppData";
 
-import '../globals.css'
-import './asset/Style/App.css'
 
-import './asset/Script/App'
+import './Style/App.css'
+import './Script/App'
 
 const AppNav = () => {
     const [isNavOpen, setisNavOpen] = React.useState(false)

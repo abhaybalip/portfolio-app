@@ -2,7 +2,6 @@
 
 import AppLayout from './asset/AppLayout';
 
-import './globals.css'
 import './asset/Style/About.css'
 
 import ProfileImg from './asset/Image/About/ProfileImg.jpg'
@@ -13,7 +12,7 @@ const about_page = () => {
     <>
       <div className="app-main-abt">
         {/* Profile Image */}
-        <Image src={ProfileImg.src} alt="Profile Picture" className="abt-img1" />
+        <img src={ProfileImg.src} alt="Profile Picture" className="abt-img1" />
 
         {/* Introduction Text */}
         <div className="abt-txt1">
