@@ -5,7 +5,7 @@ import React from "react";
 
 import { IoIosMenu, IoMdClose } from "react-icons/io";
 
-import { NavList } from './asset/AppData'
+import { NavList } from "./AppData";
 
 import '../globals.css'
 import './asset/Style/App.css'

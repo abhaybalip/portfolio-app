@@ -1,6 +1,6 @@
 'use client';
 
-import AppLayout from '../AppLayout';
+import AppLayout from '../asset/AppLayout';
 
 import '../asset/Style/Education.css'
 

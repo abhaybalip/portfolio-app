@@ -1,6 +1,6 @@
 'use client';
 
-import AppLayout from './AppLayout';
+import AppLayout from './asset/AppLayout';
 
 import './globals.css'
 import './asset/Style/About.css'
