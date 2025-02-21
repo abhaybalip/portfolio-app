@@ -67,7 +67,7 @@ function AppLayout({ main }) {
             }
             <div className="app-main">
                 {
-                    main
+                    main()
                 }
             </div>
             {

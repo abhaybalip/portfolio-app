@@ -1,66 +1,65 @@
-.app-main-skills {
+.app-main-skl {
     width: 100%;
     max-width: var(--max-width);
-    margin: auto;
-    text-align: center;
     padding: var(--space-lg);
-    background-color: var(--background-color);
-    color: var(--text-color);
 }
 
-.skills-title {
+.skl-panel {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+
+    margin-bottom: var(--space-lg);
+    padding: var(--space-md);
+}
+
+.panel-title {
     font-size: var(--fontsize-2);
     font-weight: bold;
     color: var(--primary-color);
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
+    text-align: center;
 }
 
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.panel-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Adjusts grid based on screen size */
     gap: var(--space-md);
+    /* Space between grid items */
+    text-align: center;
 }
 
-.skill-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-xs);
+.panel-li {
     font-size: var(--fontsize-1);
-    font-weight: 500;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--text-color);
-    padding: var(--space-sm) var(--space-md);
-    border: 1px solid var(--border-color);
+    color: var(--gray-100);
+
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: var(--border-radius);
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
-    transition: all 0.3s ease-in-out;
+    padding: var(--space-sm);
+
+    transition: all 0.3s ease;
     cursor: pointer;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
 }
 
-.skill-box:hover {
-    background-color: var(--accent-color);
+.panel-li:hover {
+    background-color: var(--primary-color);
     color: var(--background-color);
     transform: scale(1.05);
-    box-shadow: 0 0 10px var(--gray-400);
 }
 
-/* Responsive */
 @media (max-width: var(--small-screen)) {
-    .app-main-skills {
+    .app-main-skl {
         padding: var(--space-sm);
     }
 
-    .skills-container {
-        flex-direction: column;
-        align-items: center;
+    .panel-title {
+        font-size: var(--fontsize-s-2);
     }
 
-    .skill-box {
+    .panel-li {
         font-size: var(--fontsize-s-1);
-        width: 80%;
     }
 }

@@ -34,6 +34,6 @@ const about_page = () => {
 
 
 function page(){
-  return AppLayout({ main: about_page() })
+  return AppLayout({ main: about_page })
 }
 export default page;

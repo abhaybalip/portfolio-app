@@ -1,7 +1,6 @@
 .app-main-abt {
     width: 100%;
     max-width: var(--max-width);
-
 }
 
 .abt-img1 {
@@ -39,7 +38,7 @@
 
 @media (max-width: --small-screen) {
 
-    .abt-txt1{
+    .abt-txt1 {
         font-size: var(--fontsize-s-2);
     }
 }
