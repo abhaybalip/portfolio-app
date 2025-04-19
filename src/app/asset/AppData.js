@@ -4,15 +4,15 @@ import { FaGithub, FaLinkedin, FaXTwitter, FaEnvelope } from 'react-icons/fa6'
 
 const NavList = [
     {
-        name: 'about', path: '/'
+        name: 'About', path: '/'
     }, {
-        name: 'education', path: '/education'
+        name: 'Education', path: '/education'
     }, {
-        name: 'skillset', path: '/skillset'
+        name: 'SkillSet', path: '/skillset'
     }, {
-        name: 'link-me', path: '/contact'
+        name: 'Link-Me', path: '/contact'
     }, {
-        name: 'resume', path: '/resume'
+        name: 'Resume', path: '/resume'
     },
 ]
 
@@ -73,6 +73,7 @@ const contactLink = [
     },
 ]
 
-const resumeLink = 'https://drive.google.com/file/d/13nDcAb7ql4Pu7_E-KYHneadDizETAJG2/view?usp=drive_link'
+const resumeLink = 'https://drive.google.com/file/d/1z1ebA8p9TYPYOrZdQD-_ZoiiBEso8-4w/view?usp=sharing'
 
 export { NavList, resumeLink, educationData, contactLink, skillSet };
+
