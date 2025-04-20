@@ -1,0 +1,44 @@
+.app-main-abt {
+    width: 100%;
+    max-width: var(--max-width);
+}
+
+.abt-img1 {
+    height: var(--len-lg);
+    width: var(--len-lg);
+    margin: var(--space-md);
+
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+
+    transition: transform 0.25s ease-in-out;
+}
+
+.abt-img1:hover {
+    transform: scale(1.1);
+}
+
+.abt-txt1 {
+    max-width: var(--max-width-content);
+    font-size: var(--fontsize-2);
+    line-height: 1.5;
+    padding: var(--space-md);
+    margin: var(--space-sm);
+
+    border-radius: var(--border-radius);
+    background: rgba(255, 255, 255, 0.1);
+    /* Subtle transparency */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    color: var(--gray-100);
+
+    text-align: center;
+}
+
+@media (max-width: --small-screen) {
+
+    .abt-txt1 {
+        font-size: var(--fontsize-s-2);
+    }
+}
