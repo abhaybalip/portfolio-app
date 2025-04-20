@@ -1,12 +1,12 @@
 'use client';
 
-import AppLayout from '../asset/AppLayout'
+import AppLayout from '../Asset/AppLayout'
 
-import { contactLink } from '../asset/AppData';
+import { contactLink } from '../Asset/AppData';
 
-import '../asset/Style/Contact.css'
+import '../Asset/Style/Contact.css'
 
-const conPage = () => {
+const ContactPage = () => {
     return (
         <div className="app-main-con">
             <h2 className="con-title">Get in Touch</h2>
@@ -25,7 +25,7 @@ const conPage = () => {
 }
 
 function Page() {
-    return AppLayout({ main: conPage })
+    return AppLayout({ main: ContactPage })
 }
 
 export default Page

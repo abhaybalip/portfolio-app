@@ -1,12 +1,12 @@
 'use client';
 
-import AppLayout from '../asset/AppLayout';
+import AppLayout from '../Asset/AppLayout';
 
-import { educationData } from '../asset/AppData';
+import { educationData } from '../Asset/AppData.js';
 
-import '../asset/Style/Education.css';
+import '../Asset/Style/Education.css';
 
-const educationPage = () => {
+const EducationPage = () => {
     return (
         <div className="app-main-edu">
             <div className="edu-panel">
@@ -25,7 +25,7 @@ const educationPage = () => {
 }
 
 function page() {
-    return AppLayout({ main: educationPage })
+    return AppLayout({ main: EducationPage })
 }
 
 export default page;

@@ -73,7 +73,7 @@ const contactLink = [
     },
 ]
 
-const resumeLink = 'https://drive.google.com/file/d/1z1ebA8p9TYPYOrZdQD-_ZoiiBEso8-4w/view?usp=sharing'
+const ResumeLink = 'https://drive.google.com/file/d/1z1ebA8p9TYPYOrZdQD-_ZoiiBEso8-4w/preview'
 
-export { NavList, resumeLink, educationData, contactLink, skillSet };
+export { NavList, ResumeLink, educationData, contactLink, skillSet };
 

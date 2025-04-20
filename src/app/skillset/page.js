@@ -1,11 +1,11 @@
 'use client';
 
-import AppLayout from '../asset/AppLayout'
-import { skillSet } from '../asset/AppData';
+import AppLayout from '../Asset/AppLayout'
+import { skillSet } from '../Asset/AppData';
 
-import '../asset/Style/Skillset.css'
+import '../Asset/Style/Skillset.css'
 
-const skillset_page = () => {
+const SkillsetPage = () => {
     return (
         <>
             <div className="app-main-skl">
@@ -36,7 +36,7 @@ const skillset_page = () => {
 }
 
 function page() {
-    return AppLayout({ main: skillset_page })
+    return AppLayout({ main: SkillsetPage })
 }
 
 export default page

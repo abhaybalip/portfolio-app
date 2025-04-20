@@ -1,10 +1,10 @@
 'use client';
 
-import AppLayout from './asset/AppLayout';
+import AppLayout from './Asset/AppLayout';
 
-import './asset/Style/About.css'
+import './Asset/Style/About.css'
 
-import ProfileImg from './asset/Image/About/ProfileImg.jpg'
+import ProfileImg from './Asset/Image/About/ProfileImg.jpg'
 // import Image from "next/image";
 
 const about_page = () => {

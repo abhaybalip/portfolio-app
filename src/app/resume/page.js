@@ -1,25 +1,29 @@
-"use client";
+'use client';
 
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
-import { resumeLink } from "../asset/AppData";
+import React from "react";
 
-import "../asset/Style/Resume.css";
+import AppLayout from "../Asset/AppLayout";
 
-function Page() {
-    const router = useRouter();
+import '../Asset/Style/Resume.css';
 
-    useEffect(() => {
-        setTimeout(() => {
-            const userConfirmed = window.confirm("Do you want to open the resume in a new tab?");
-            if (userConfirmed) {
-                window.open(resumeLink, "_blank");
-                router.push("/");
-            } else {
-                router.push("/");
-            }
-        }, 100);
-    }, [router]);
+import { ResumeLink } from "../Asset/AppData";
+
+const ResumePage = () => {
+    return (
+        <div className="app-main-res">
+            <div className="resume-container">
+                <iframe
+                    src={ResumeLink}
+                    className="resume-iframe"
+                    title="Resume"
+                ></iframe>
+            </div>
+        </div>
+    );
+};
+
+function page() {
+    return AppLayout({ main: ResumePage })
 }
 
-export default Page;
+export default page;
