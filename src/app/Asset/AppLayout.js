@@ -10,6 +10,7 @@ import { NavList } from "./AppData";
 
 import './Style/App.css'
 import './Script/App'
+import MouseFollower from "./Cursor";
 
 const AppNav = () => {
     const [isNavOpen, setisNavOpen] = React.useState(false)
@@ -62,6 +63,7 @@ const AppFoot = () => {
 function AppLayout({ main }) {
     return (
         <div id="app" className="app">
+            <MouseFollower />
             {
                 AppNav()
             }
